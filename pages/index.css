@@ -10,7 +10,7 @@
 
 .header {
   background-color: #fff;
-  background-image: url(/se_project_2_files/se_project_coffeeshop/images/background_header.svg);
+  background-image: url(../images/background_header.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -121,7 +121,7 @@
 }
 
 .recipes {
-  background-image: url(/se_project_2_files/se_project_coffeeshop/images/background_recipes.svg);
+  background-image: url(../images/background_recipes.svg);
   background-color: #0a2750;
   background-size: cover;
   background-position: center;
