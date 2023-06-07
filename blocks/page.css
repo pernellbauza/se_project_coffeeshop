@@ -7,3 +7,9 @@
   line-height: 20px;
   margin-top: auto;
 }
+
+@media (min-width: 1600px) {
+  .page-wrapper {
+    width: 1600px;
+  }
+}
