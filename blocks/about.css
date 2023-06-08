@@ -37,19 +37,14 @@
 }
 
 .about__paragraph {
-  border-radius: 2px;
-  min-width: 20px;
-  min-height: 20px;
-  margin: 12px 0 0;
-}
-
-.about__paragraph:nth-child(1) {
+  margin-bottom: 20px;
   margin-top: 0;
 }
 
-.about__paragraph:nth-child(3) {
+.about__paragraph:last-of-type {
   margin-bottom: 0;
 }
+
 
 .about__circle {
   box-sizing: border-box;

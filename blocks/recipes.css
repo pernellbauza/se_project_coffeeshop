@@ -36,6 +36,8 @@
   display: flex;
   justify-content: center;
   gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .recipes__iframe {
