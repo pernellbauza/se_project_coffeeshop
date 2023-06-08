@@ -58,8 +58,8 @@
             Check out some recipes we've collected for your home-brewing
             convenience:
         </p>
-        <div class="recipes__videos">
-          <div class="recipes__video">
+        <ul class="recipes__videos">
+          <li class="recipes__video">
             <iframe
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc"
@@ -70,8 +70,8 @@
             <p class="recipes__video-caption">
                 Aeropress recipe <span>~5 min</span>
             </p>
-          </div>
-          <div class="recipes__video">
+          </li>
+          <li class="recipes__video">
             <iframe
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/st571DYYTR8"
@@ -82,8 +82,8 @@
             <p class="recipes__video-caption">
                 French press recipe <span>~15 min</span>
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section id="reservation" class="reservation">
         <h2 class="reservation__title">Book a table</h2>
@@ -96,7 +96,7 @@
                 id="surname"
                 name="surname"
                 placeholder="Name Surname"
-              />
+              >
             </fieldset>
             <fieldset class="form__fieldset">
               <label for="guest" class="form__label">Number of guests</label>
@@ -108,7 +108,7 @@
                 id="guest"
                 name="guest"
                 placeholder="1-8"
-              />
+              >
             </fieldset>
             <fieldset class="form__fieldset">
               <label for="date-time" class="form__label">Date & Time</label>
@@ -117,7 +117,7 @@
                 class="form__input"
                 id="date-time"
                 name="date-time"
-              />
+              >
             </fieldset>
             <fieldset class="form__fieldset">
               <label for="email" class="form__label">Your email</label>
@@ -127,20 +127,22 @@
                 id="email"
                 name="email"
                 placeholder="email@mail.com"
-              />
+              >
             </fieldset>
             <fieldset class="form__fieldset">
               <button type="submit" class="form__button">Book a table</button>
             </fieldset>
-            <fieldset class="form__checkbox">
+            <label class="form__label form__label_type_checkbox" for="checkbox">
               <input
+                class="form__input form__input_type_checkbox"
                 type="checkbox"
-                class="form__input form__input-checkox"
-                id="i-agree"
-                name="i-agree"
-              />
-              <label for="i-agree" class="form__label">I agree with the terms of use</label>
-            </fieldset>
+                id="checkbox"
+                name="checkbox"
+                required
+              >
+              <span class="visible-checkbox"></span>
+              I agree with terms of use
+            </label>
           </form>
       </section>
       <section id="menu" class="menu">
@@ -150,7 +152,7 @@
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
           <div class="menu__cards">
-            <div class="card">
+            <article class="card">
               <h3 class="card__title">Filter</h3>
               <ul class="card__list">
                 <li class="card__list-item">
@@ -171,8 +173,8 @@
                   <span class="card__list-divider"></span>$1.25
                 </li>
               </ul>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
               <h3 class="card__title">Expresso</h3>
               <ul class="card__list">
                 <li class="card__list-item">
@@ -189,8 +191,8 @@
                   <span class="card__list-divider"></span>$10
                 </li>
               </ul>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
               <h3 class="card__title">Bake Goods</h3>
               <ul class="card__list">
                 <li class="card__list-item">
@@ -209,10 +211,10 @@
                   Web Cookie <span class="card__list-divider"></span>$2
                 </li>
                 <li class="card__list-item">
-                  French Bur'uette <span class="card__list-divider"></span>$0.25
+                  Fresh Bug'uette <span class="card__list-divider"></span>$0.25
                 </li>
               </ul>
-            </div>
+            </article>
           </div>
       </section>
       <section id="about" class="about">
@@ -237,23 +239,20 @@
     </main>
     <footer class="footer">
       <div class="footer__content">
-        <h3 class="footer__social-heading">Social media</h3>
-        <ul class="footer__list">
-          <li class="footer__list-item">
-            <img
+        <img
               src="./images/practicum_logo.svg"
               alt="Practicum logo"
               class="footer__logo"
-            />
-          </li>
-          <li class="footer__list-item footer__list-item_1">
+            >
+        <ul class="footer__list">
+          <h3 class="footer__social-heading">Social media</h3>
+          <li class="footer__list-item">
             <a href="https://facebook.com" class="footer__social-link">
               <img
                 src="./images/facebook_white.svg"
                 alt="Facebook icon"
                 class="footer__social-icon"
-              />Facebook</a
-            >
+              >Facebook</a>
           </li>
           <li class="footer__list-item">
             <a href="https://instagram.com" class="footer__social-link"
@@ -261,8 +260,7 @@
                 src="./images/instagram_white.svg"
                 alt="Instagram icon"
                 class="footer__social-icon"
-              />Instagram</a
-            >
+              >Instagram</a>
           </li>
         </ul>
       </div>

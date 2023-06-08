@@ -1,5 +1,6 @@
 .form__fieldset {
-  margin-bottom: 32px;
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -14,9 +15,12 @@
 }
 
 .form__input {
-  min-width: 385px;
-  min-height: 60px;
+  max-width: 385px;
+  width: 385px;
+  height: 60px;
+  margin-bottom: 32px;
   border-radius: 4px;
+  border: 1px solid #838383;
 }
 
 .form__input::placeholder {
@@ -38,6 +42,8 @@
   border-radius: 4px;
   background-color: #2f80ed;
   color: #ffffff;
+  cursor: pointer;
+  border: 1px solid #838383;
 }
 
 .form__button:hover {
@@ -55,17 +61,32 @@
   border: none;
 }
 
-.form__input[type="checkbox"] {
-  min-width: 20px;
-  min-height: 20px;
+.form__input_type_checkbox {
+  border-radius: 2px;
+  border: none;
+  width: 20px;
+  height: 20px;
+  margin: 0 12px 0 0;
 }
 
-.form__label[for="i-agree"] {
-  margin-bottom: 0px;
+.form__label_type_checkbox {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 32px 0 0;
 }
 
-.form__checkbox {
-  min-width: 20px;
-  min-height: 20px;
-  margin-right: 12px;
+.form__input_type_checkbox .visible-checkbox {
+  background-color: #ffffff;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  margin: 0 12px 0 0;
+}
+
+.form__input_type_checkbox:checked .visible-checkbox {
+  background-color: #2f80ed;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
