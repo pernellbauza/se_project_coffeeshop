@@ -37,14 +37,12 @@
 }
 
 .about__paragraph {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
+}
+
+/*.about__paragraph:nth-child(2) {
   margin-top: 0;
-}
-
-.about__paragraph:last-of-type {
-  margin-bottom: 0;
-}
-
+}*/
 
 .about__circle {
   box-sizing: border-box;
